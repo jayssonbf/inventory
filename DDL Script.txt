@@ -1,0 +1,13 @@
+CREATE TABLE product (
+   product_id    varchar(10),
+   product_name  varchar(50),
+   product_type  varchar(10),
+   batch		 int,
+   description   varchar(250),
+   qty           int,
+   status        varchar(10) check (status in ('new', 'used')),
+   date          date,
+   
+   primary key (product_id)
+);
+

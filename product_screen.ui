@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>681</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>product_id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>product_name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>product_type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>description</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>qty</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>date</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>StockPro</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>681</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>105</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>In stock</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="backLink">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/icons/arrow-curve-180-left.png</normaloff>../icons/icons/arrow-curve-180-left.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addProduct">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>102</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Product</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../icons/icons/plus.png</normaloff>../icons/icons/plus.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

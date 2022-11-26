@@ -10,8 +10,23 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icons/icons/arrow-270.png</normaloff>../icons/icons/arrow-270.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+
+</string>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -37,8 +52,14 @@
    </property>
    <property name="font">
     <font>
+     <family>cursive</family>
      <pointsize>28</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(30, 136, 229);
+font-family: &quot;Times New Roman&quot;, Times, serif;
+font-family: cursive;</string>
    </property>
    <property name="text">
     <string>StockPro</string>
@@ -49,14 +70,19 @@
     <rect>
      <x>100</x>
      <y>80</y>
-     <width>241</width>
+     <width>201</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>18</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(30, 136, 229);
+font-family: Arial, Helvetica, sans-serif</string>
    </property>
    <property name="text">
     <string>Stock per Material</string>
@@ -71,6 +97,11 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+</string>
+   </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
    </property>
@@ -80,14 +111,18 @@
     <rect>
      <x>100</x>
      <y>160</y>
-     <width>81</width>
+     <width>121</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Batch number</string>
@@ -99,8 +134,26 @@
      <x>100</x>
      <y>180</y>
      <width>211</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(85, 170, 255);
+}
+
+QLineEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+
+	
+</string>
    </property>
    <property name="inputMask">
     <string/>
@@ -112,7 +165,7 @@
     <bool>true</bool>
    </property>
    <property name="placeholderText">
-    <string>Enter batch</string>
+    <string>Enter number</string>
    </property>
   </widget>
   <widget class="QPushButton" name="scanButton">
@@ -120,9 +173,44 @@
     <rect>
      <x>320</x>
      <y>180</y>
-     <width>71</width>
-     <height>21</height>
+     <width>81</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:8px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;	
+
+}
+
+QPushButton:hover{
+	background:linear-gradient(to bottom, #1E88E5 5%, #ffffff 100%);
+	background-color:#1E88E5;
+	color:rgb(255, 255, 255);
+}</string>
    </property>
    <property name="text">
     <string> Scan</string>
@@ -137,14 +225,18 @@
     <rect>
      <x>100</x>
      <y>230</y>
-     <width>91</width>
+     <width>101</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Product Name</string>
@@ -156,8 +248,26 @@
      <x>100</x>
      <y>250</y>
      <width>211</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(85, 170, 255);
+}
+
+QLineEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+
+
+</string>
    </property>
    <property name="inputMask">
     <string/>
@@ -177,14 +287,18 @@
     <rect>
      <x>100</x>
      <y>300</y>
-     <width>47</width>
-     <height>13</height>
+     <width>51</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Type</string>
@@ -195,9 +309,40 @@
     <rect>
      <x>100</x>
      <y>320</y>
-     <width>151</width>
-     <height>22</height>
+     <width>161</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	border: 1px solid #CCCCCC;
+	border-radius: 10px;
+
+}
+
+QComboBox:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+
+QComboBox::drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/icon/down arrow.ico);
+	width: 12px;
+	height: 12px;
+	margin-right: 15px;
+
+
+}
+
+
+
+
+
+
+</string>
    </property>
    <property name="currentText">
     <string/>
@@ -206,7 +351,10 @@
     <number>-1</number>
    </property>
    <property name="placeholderText">
-    <string>Type</string>
+    <string/>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
    </property>
    <item>
     <property name="text">
@@ -262,11 +410,50 @@
   <widget class="QPushButton" name="searchButton">
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>330</x>
      <y>520</y>
-     <width>75</width>
-     <height>23</height>
+     <width>91</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	
+
+}
+
+QPushButton:hover{
+	background:linear-gradient(to bottom, #1E88E5 5%, #ffffff 100%);
+	background-color:#1E88E5;
+	color:rgb(255, 255, 255);
+}
+
+
+</string>
    </property>
    <property name="text">
     <string>Search</string>
@@ -277,15 +464,52 @@
     <rect>
      <x>440</x>
      <y>520</y>
-     <width>75</width>
-     <height>23</height>
+     <width>91</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	
+}
+
+QPushButton:hover{
+	background:linear-gradient(to bottom, #1E88E5 5%, #ffffff 100%);
+	background-color:#1E88E5;
+	color:rgb(255, 255, 255);
+}</string>
    </property>
    <property name="text">
     <string>Clear</string>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../icons/source.qrc"/>
+ </resources>
  <connections/>
 </ui>

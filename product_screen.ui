@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>838</width>
-    <height>602</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,17 +18,23 @@
     <rect>
      <x>340</x>
      <y>20</y>
-     <width>171</width>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>cursive</family>
      <pointsize>28</pointsize>
     </font>
    </property>
    <property name="layoutDirection">
     <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(30, 136, 229);
+font-family: &quot;Times New Roman&quot;, Times, serif;
+font-family: cursive;</string>
    </property>
    <property name="text">
     <string>StockPro</string>
@@ -60,6 +66,11 @@
    </column>
    <column>
     <property name="text">
+     <string>batch</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
      <string>description</string>
     </property>
    </column>
@@ -82,11 +93,36 @@
   <widget class="QPushButton" name="addProduct">
    <property name="geometry">
     <rect>
-     <x>680</x>
+     <x>660</x>
      <y>102</y>
-     <width>91</width>
+     <width>111</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:8px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;	
+
+}
+
+QPushButton:hover{
+	background:linear-gradient(to bottom, #1E88E5 5%, #ffffff 100%);
+	background-color:#1E88E5;
+	color:rgb(255, 255, 255);
+}</string>
    </property>
    <property name="text">
     <string>Add Product</string>
@@ -112,11 +148,14 @@
   <widget class="QCommandLinkButton" name="backLink">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
+     <x>0</x>
+     <y>0</y>
      <width>71</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Back</string>
@@ -136,18 +175,36 @@
    <property name="geometry">
     <rect>
      <x>90</x>
-     <y>105</y>
+     <y>110</y>
      <width>131</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>16</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(30, 136, 229);
+font-family: Arial, Helvetica, sans-serif</string>
+   </property>
    <property name="text">
     <string>In stock</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>39</y>
+     <width>61</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
    </property>
   </widget>
  </widget>

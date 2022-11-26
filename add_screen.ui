@@ -16,11 +16,21 @@
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>200</y>
-     <width>71</width>
+     <width>91</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;
+</string>
    </property>
    <property name="text">
     <string>Batch number</string>
@@ -29,11 +39,36 @@
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>330</x>
+     <x>320</x>
      <y>540</y>
-     <width>81</width>
+     <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	
+}
+
+QPushButton:hover{
+	background:linear-gradient(to bottom, #1E88E5 5%, #ffffff 100%);
+	background-color:#1E88E5;
+	color:rgb(255, 255, 255);
+}</string>
    </property>
    <property name="text">
     <string>Create</string>
@@ -50,8 +85,14 @@
    </property>
    <property name="font">
     <font>
+     <family>cursive</family>
      <pointsize>28</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(30, 136, 229);
+font-family: &quot;Times New Roman&quot;, Times, serif;
+font-family: cursive;</string>
    </property>
    <property name="text">
     <string>StockPro</string>
@@ -60,11 +101,20 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>140</y>
      <width>47</width>
      <height>13</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Name</string>
@@ -75,9 +125,56 @@
     <rect>
      <x>480</x>
      <y>160</y>
-     <width>291</width>
-     <height>22</height>
+     <width>281</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	border: 1px solid #ced4da;
+	border-radius: 8px;
+	
+}
+
+QComboBox:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+
+QComboBox::drop-down{
+	border: 0px;
+}
+
+QComboBox::down-arrow{
+	image: url(:/icon/down arrow.ico);
+	width: 12px;
+	height: 12px;
+	margin-right: 15px;
+}
+
+/*style for QcomboBox after open select menu*/
+QComboBox:on{
+	border: 2px solid #c2dbfe;
+}
+
+/*style for list menu*/
+QComboBox QListView{
+	font-size: 12px;
+	border: 1px solid rgba(0, 0, 0, 10%);
+	padding: 5px;
+	background-color: #fff;
+	outline: 0px;
+}
+
+/*style for list of items*/
+QComboBox QListView::item{
+	padding-left: 10px;
+	background-color: rgb(194, 219, 254);
+}
+
+QComboBox QListView::item:hover{
+	background-color: rgb(194, 219, 254)
+	
+}</string>
    </property>
    <property name="currentText">
     <string>Appliances</string>
@@ -142,10 +239,10 @@
   <widget class="Line" name="line">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>100</x>
      <y>110</y>
-     <width>711</width>
-     <height>16</height>
+     <width>661</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="orientation">
@@ -155,11 +252,14 @@
   <widget class="QCommandLinkButton" name="goBack">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>10</y>
      <width>121</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Back to Main</string>
@@ -178,11 +278,27 @@
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>160</y>
      <width>291</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border: 1px solid #ced4da;
+	border-radius: 10px;
+
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(194, 219, 254);
+}
+
+QLineEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+</string>
    </property>
    <property name="inputMask">
     <string/>
@@ -200,11 +316,20 @@
   <widget class="QLabel" name="label_13">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>330</y>
      <width>71</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Description</string>
@@ -213,11 +338,36 @@
   <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>440</x>
+     <x>430</x>
      <y>540</y>
-     <width>81</width>
+     <width>91</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+	
+}
+
+QPushButton:hover{
+	background:linear-gradient(to bottom, #1E88E5 5%, #ffffff 100%);
+	background-color:#1E88E5;
+	color:rgb(255, 255, 255);
+}</string>
    </property>
    <property name="text">
     <string>Cancel</string>
@@ -226,11 +376,20 @@
   <widget class="QLabel" name="label_17">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>260</y>
      <width>47</width>
      <height>13</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Status</string>
@@ -242,8 +401,17 @@
      <x>480</x>
      <y>140</y>
      <width>47</width>
-     <height>13</height>
+     <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Type</string>
@@ -252,11 +420,27 @@
   <widget class="QTextEdit" name="textEdit">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>350</y>
-     <width>701</width>
+     <width>661</width>
      <height>171</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*QTextEdit{
+	border: 2px solid #ced4da;
+	border-radius: 50px;
+
+}
+
+QTextEdit:focus{
+	border: 2px solid rgb(194, 219, 254);
+}
+
+QTextEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+</string>
    </property>
    <property name="placeholderText">
     <string>A small description of state of the product</string>
@@ -265,17 +449,33 @@
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>280</y>
      <width>291</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border: 1px solid #ced4da;
+	border-radius: 10px;
+
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(194, 219, 254);
+}
+
+QLineEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="placeholderText">
-    <string>It is new or used?</string>
+    <string>Is it new or used?</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_7">
@@ -283,9 +483,18 @@
     <rect>
      <x>480</x>
      <y>200</y>
-     <width>47</width>
-     <height>13</height>
+     <width>61</width>
+     <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
    </property>
    <property name="text">
     <string>Quantity</string>
@@ -296,9 +505,25 @@
     <rect>
      <x>480</x>
      <y>220</y>
-     <width>291</width>
-     <height>21</height>
+     <width>281</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border: 1px solid #ced4da;
+	border-radius: 10px;
+
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(194, 219, 254);
+}
+
+QLineEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+</string>
    </property>
    <property name="placeholderText">
     <string>Enter quantity</string>
@@ -313,6 +538,15 @@
      <height>13</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Arial&quot;, &quot;Lucida Console&quot;, monospace;</string>
+   </property>
    <property name="text">
     <string>Date</string>
    </property>
@@ -322,9 +556,25 @@
     <rect>
      <x>480</x>
      <y>280</y>
-     <width>291</width>
-     <height>21</height>
+     <width>281</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border: 1px solid #ced4da;
+	border-radius: 10px;
+
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(194, 219, 254);
+}
+
+QLineEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+</string>
    </property>
    <property name="placeholderText">
     <string>MM-DD-YYYY</string>
@@ -333,16 +583,21 @@
   <widget class="QLabel" name="label_15">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>70</y>
+     <x>100</x>
+     <y>90</y>
      <width>201</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>16</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(30, 136, 229);
+font-family: Arial, Helvetica, sans-serif</string>
    </property>
    <property name="text">
     <string>Create New Product</string>
@@ -351,11 +606,27 @@
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>100</x>
      <y>220</y>
      <width>291</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border: 1px solid #ced4da;
+	border-radius: 10px;
+
+}
+
+QLineEdit:focus{
+	border: 2px solid rgb(194, 219, 254);
+}
+
+QLineEdit:hover{
+	border: 1px solid rgb(85, 170, 255);
+}
+</string>
    </property>
    <property name="text">
     <string/>
@@ -364,7 +635,22 @@
     <string>Enter batch</string>
    </property>
   </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>61</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../icons/source.qrc"/>
+ </resources>
  <connections/>
 </ui>

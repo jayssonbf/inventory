@@ -1,6 +1,7 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QDialog
 from PyQt5 import uic
+import source
 import sys
 
 class MainWindow(QDialog):
@@ -22,10 +23,8 @@ class ProductScreen(QDialog):
         def gotoMain(self):
             widget.setCurrentIndex(widget.currentIndex() - 1)
 
-
         def gotoAddProduct(self):
             widget.setCurrentIndex(widget.currentIndex() + 1)
-
 
 class AddScreen(QDialog):
     def __init__(self):
@@ -34,7 +33,6 @@ class AddScreen(QDialog):
         self.goBack.clicked.connect(self.gotoMain)
 
     def gotoMain(self):
-        print(f'Current Index: {widget.currentIndex() - 2}')
         widget.setCurrentIndex(widget.currentIndex() - 2)
 
 #window
@@ -51,7 +49,6 @@ widget.addWidget(addscreen)
 widget.setWindowTitle('Inventory Management System')
 widget.setFixedHeight(600)
 widget.setFixedWidth(840)
-#widget.setStyleSheet('background: #FFFFFF;')
 widget.show()
 
 sys.exit(app.exec_())

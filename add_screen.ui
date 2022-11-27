@@ -24,8 +24,7 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>10</pointsize>
+     <family>Arial,Lucida Console,monospace</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -36,7 +35,7 @@
     <string>Batch number</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="createButton">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -109,8 +108,7 @@ font-family: cursive;</string>
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>10</pointsize>
+     <family>Arial,Lucida Console,monospace</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -120,7 +118,7 @@ font-family: cursive;</string>
     <string>Name</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="type">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -182,7 +180,7 @@ QComboBox QListView::item:hover{
    <property name="currentIndex">
     <number>0</number>
    </property>
-   <property name="placeholderText">
+   <property name="placeholderText" stdset="0">
     <string>Type</string>
    </property>
    <item>
@@ -275,7 +273,7 @@ QComboBox QListView::item:hover{
     </size>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="nameInput">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -324,8 +322,7 @@ QLineEdit:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>10</pointsize>
+     <family>Arial,Lucida Console,monospace</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -335,7 +332,7 @@ QLineEdit:hover{
     <string>Description</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="cancelButton">
    <property name="geometry">
     <rect>
      <x>430</x>
@@ -384,8 +381,7 @@ QPushButton:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>10</pointsize>
+     <family>Arial,Lucida Console,monospace</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -406,8 +402,7 @@ QPushButton:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>10</pointsize>
+     <family>Arial,Lucida Console,monospace</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -417,7 +412,7 @@ QPushButton:hover{
     <string>Type</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="descriptionInput">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -446,7 +441,7 @@ QTextEdit:hover{
     <string>A small description of state of the product</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="statusInput">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -489,8 +484,7 @@ QLineEdit:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>10</pointsize>
+     <family>Arial,Lucida Console,monospace</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -500,7 +494,7 @@ QLineEdit:hover{
     <string>Quantity</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_11">
+  <widget class="QLineEdit" name="quantityInput">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -540,8 +534,7 @@ QLineEdit:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>10</pointsize>
+     <family>Arial,Lucida Console,monospace</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -551,7 +544,7 @@ QLineEdit:hover{
     <string>Date</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_7">
+  <widget class="QLineEdit" name="dateInput">
    <property name="geometry">
     <rect>
      <x>480</x>
@@ -591,8 +584,7 @@ QLineEdit:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>16</pointsize>
+     <family>Arial,Helvetica,sans-serif</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -603,7 +595,7 @@ font-family: Arial, Helvetica, sans-serif</string>
     <string>Create New Product</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="batchInput">
    <property name="geometry">
     <rect>
      <x>100</x>

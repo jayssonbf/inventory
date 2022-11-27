@@ -40,7 +40,7 @@ font-family: cursive;</string>
     <string>StockPro</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="productTable">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -182,8 +182,7 @@ QPushButton:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>16</pointsize>
+     <family>Arial,Helvetica,sans-serif</family>
     </font>
    </property>
    <property name="styleSheet">

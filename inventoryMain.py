@@ -74,6 +74,7 @@ class MainWindow(QDialog):
     def clearInput(self):
         self.batchInput.clear()
         self.productInput.clear()
+        self.typeDropdown.setCurrentIndex(-1)
 
 
 class ProductScreen(QDialog):

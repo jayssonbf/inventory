@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../icons/icons/arrow-270.png</normaloff>../icons/icons/arrow-270.png</iconset>
+    <normaloff>arrow-270.png</normaloff>arrow-270.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);
@@ -213,7 +213,7 @@ QPushButton:hover{
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../icons/icons/camera--plus.png</normaloff>../icons/icons/camera--plus.png</iconset>
+     <normaloff>camera--plus.png</normaloff>camera--plus.png</iconset>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">

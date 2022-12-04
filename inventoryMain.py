@@ -1,9 +1,10 @@
 from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QApplication, QDialog, QMessageBox
+from PyQt5.QtWidgets import QApplication, QDialog, QMessageBox, QInputDialog
 from PyQt5 import uic
 import sys
 import scanner
 import database
+
 
 
 class MainWindow(QDialog):
@@ -44,8 +45,9 @@ class MainWindow(QDialog):
                 self.showAddItemQuery()
 
     def scanBarcode(self):
-        batch = scanner.scan_for_barcode()
-        self.batchInput.setText(str(batch))
+        self.showScanningDeviceQuery()
+        #batch = scanner.scan_for_barcode()
+        #self.batchInput.setText(str(batch))
 
     def showBlankPopup(self):
         box = QMessageBox()
@@ -76,6 +78,28 @@ class MainWindow(QDialog):
         self.productInput.clear()
         self.typeDropdown.setCurrentIndex(-1)
 
+    def showScanningDeviceQuery(self):
+        box = QMessageBox()
+        box.setIcon(QMessageBox.Question)
+        box.setWindowTitle('Choose Device')
+        box.setText('Please select what device you will connect to.')
+        box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+        defaultSelection = box.button(QMessageBox.Yes)
+        defaultSelection.setText('Webcam (Default Device)')
+        phoneSelection = box.button(QMessageBox.No)
+        phoneSelection.setText('Phone Camera (Needs IP)')
+        box.exec_()
+
+        if box.clickedButton() == defaultSelection:
+            scanner.scan_for_barcode("")
+        elif box.clickedButton() == phoneSelection:
+            self.showIPQuery()
+
+
+    def showIPQuery(self):
+        text, ok = QInputDialog.getText(self, 'Enter IP', 'Please enter IP address to connect to device\nExample: https://zz.z.z.zzz:zzzz')
+        if ok:
+            scanner.scan_for_barcode(str(text))
 
 class ProductScreen(QDialog):
     def __init__(self, products):

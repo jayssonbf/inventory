@@ -27,12 +27,20 @@ def read_barcodes(frame):
     return frame
 
 
-def scan_for_barcode():
+def scan_for_barcode(device):
     # Camera feed connects to network camera on phone
-    camera = cv2.VideoCapture("https://10.0.0.242:8080/video")
+    if device == "":
+        # Use web cam (default)
+        camera = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
+    else:
+        url = f"{device}/video"
+        camera = cv2.VideoCapture(url)
+
+
 
     # To use web cam (default web cam on device):
-    #camera = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    #
 
     ret, frame = camera.read()
     try:

@@ -49,7 +49,7 @@ font-family: cursive;</string>
     <string>StockPro</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="productTable">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -138,7 +138,7 @@ QPushButton:hover{
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../icons/icons/plus.png</normaloff>../icons/icons/plus.png</iconset>
+     <normaloff>plus.png</normaloff>plus.png</iconset>
    </property>
   </widget>
   <widget class="Line" name="line">
@@ -165,8 +165,7 @@ QPushButton:hover{
    </property>
    <property name="font">
     <font>
-     <family>Arial</family>
-     <pointsize>16</pointsize>
+     <family>Arial,Helvetica,sans-serif</family>
     </font>
    </property>
    <property name="styleSheet">
@@ -229,7 +228,7 @@ QCommandLinkButton:hover {
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../icons/back.png</normaloff>../icons/back.png</iconset>
+     <normaloff>back.png</normaloff>back.png</iconset>
    </property>
    <property name="iconSize">
     <size>
